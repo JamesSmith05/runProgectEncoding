@@ -7,13 +7,12 @@ public class Main {
         Scanner input = new Scanner(System.in);
         String str = input.next();
 
-        int n = str.length();
+        int stringLength = str.length();
         for (int i = 0; i < n; i++) {
 
             // Count occurrences of current character
             int count = 1;
-            while (i < n - 1 &&
-                    str.charAt(i) == str.charAt(i + 1)) {
+            while (i < stringLength - 1 && str.charAt(i) == str.charAt(i + 1)) {
                 count++;
                 i++;
             }
